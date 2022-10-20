@@ -31,7 +31,7 @@
 #img {
     width: 350px;
     height: 350px;
-    background-image: url(images/fotoperfil.jpg);
+    background-image: url('images/fotoperfil.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
