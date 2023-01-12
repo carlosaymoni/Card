@@ -4,13 +4,21 @@
     box-sizing: border-box;
 }
 
-#main {
-    height: 100vh;
-    width: 100%;
+body, 
+html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(145deg, #ffffff, #bacbfd);
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+#main {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
@@ -18,19 +26,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-width: 320px;
     height: 650px;
-    width: 650px;
-    background-color: #FFF;
     border-radius: 10px;
     -webkit-box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.774);
     box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.774);
-
+    z-index: 1;
 }
 
-
 #img {
-    width: 350px;
-    height: 350px;
+    width: 70%;
+    height: 50%;
     background-image: url('/card/images/fotoperfil.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -43,24 +49,22 @@
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: 700;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 40px auto;
 }
 
 .info p {
     margin: 20px;
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #695CFE;
-}
-
-.info p:hover {
-    text-shadow: 4px 4px 8px #8d8d8d;
+    text-align: center;
 }
 
 .fa-brands {
     color: #535353;
     font-size: 2em;
-    margin: 10px;
     margin: 10px;
 }
 
@@ -86,24 +90,28 @@
 
 /* Responsive */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:425px){
     
     #img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
+        width: 80%;
+        height: 40%;
     }
     
     .info {
-    
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 20px auto;
+        margin: 2px auto;
     }
     
     .info p {
         padding: 5px;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    .fa-brands {
+        font-size: 1.5em;
+        margin-top: 50px;
     }
 }
