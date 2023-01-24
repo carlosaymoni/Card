@@ -1,3 +1,4 @@
+/******* Reset CSS *******/
 * {
     margin: 0;
     padding: 0;
@@ -11,30 +12,31 @@ html {
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: #12253d;
 }
 
-#main {
-    max-width: 600px;
+/********* Card *********/
+
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#container {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-width: 320px;
-    height: 650px;
-    border-radius: 10px;
+    height: 550px;
+    border-radius: 8px;
     -webkit-box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.774);
     box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.774);
     z-index: 1;
 }
 
-#img {
+.card__img {
     width: 70%;
     height: 50%;
     background-image: url('/card/images/fotoperfil.jpg');
@@ -45,73 +47,47 @@ html {
     border-radius: 8px;
 }
 
-.info {
-    font-family: 'Fuzzy Bubbles', cursive;
-    font-weight: 700;
+.card__info {
+    font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     margin: 40px auto;
 }
 
-.info p {
-    margin: 20px;
-    padding: 10px;
-    font-size: 1.2rem;
-    color: #695CFE;
+.card__info p {
+    margin: 2px;
+    padding: 1px;
+    font-size: 1rem;
+    color: #fff;
     text-align: center;
+}
+
+.card__info p:nth-child(1) {
+    font-weight: 700;
+    color: rgb(203, 72, 72);
+    font-size: 1.5rem;
 }
 
 .fa-brands {
     color: #535353;
-    font-size: 2em;
+    font-size: 1.3em;
     margin: 10px;
 }
 
-.icons a {
+.card__icons a {
     text-decoration: none;
 }
 
-.icons i {
+.card__icons i {
     padding: 8px;
     border-radius: 8px;
-    background: linear-gradient(145deg, #ffffff, #bebebe);
-    box-shadow:  4px 4px 8px #8d8d8d,
-                -4px -4px 8px #ffffff;
+    background:#ffffff;
+
 }
 
-.icons i:hover {
-    color: #414141;
-    background: linear-gradient(145deg, #868686,#f0f0f0);
-    box-shadow:  2px 2px 6px #8d8d8d,
-                 -2px -2px 6px #ffffff;
-}
-
-
-/* Responsive */
-
-@media screen and (max-width:425px){
-    
-    #img {
-        width: 80%;
-        height: 40%;
-    }
-    
-    .info {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 2px auto;
-    }
-    
-    .info p {
-        padding: 5px;
-        font-size: 1rem;
-        margin: 10px;
-    }
-
-    .fa-brands {
-        font-size: 1.5em;
-        margin-top: 50px;
-    }
+.card__icons i:hover {
+    color: #000000;
+    background: #dbdbdb;    
 }
