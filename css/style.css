@@ -18,7 +18,7 @@ html {
 /********* Card *********/
 
 .card {
-    width: 320px;
+    width: 300px;
     height: 550px;
     position: relative;
     cursor: pointer;
@@ -40,7 +40,7 @@ html {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: radial-gradient(#e65733, #ef8453);
+    background: radial-gradient(#ff3300, #fe915f);
     margin: 50px auto;
     animation: move 4s infinite alternate;
 }
@@ -82,7 +82,7 @@ html {
 
 .card__info p:nth-child(1) {
     font-weight: 700;
-    color: rgb(203, 72, 72);
+    color: rgb(0, 0, 0);
     font-size: 1.5rem;
 }
 
